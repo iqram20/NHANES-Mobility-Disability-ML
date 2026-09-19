@@ -1,0 +1,40 @@
+# NHANES source data and local data products
+Data/
+data/
+*.XPT
+*.xpt
+*.parquet
+*.feather
+
+# Analysis outputs
+Results/
+results/
+logs/
+*.log
+
+# Serialized models and large intermediate arrays
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
