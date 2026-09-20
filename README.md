@@ -2,13 +2,13 @@
 
 Code repository for the manuscript:
 
-**Interpretable Machine Learning for Classifying Concurrent Mobility Disability in Adults: An NHANES 2017–2018 Study**
+**Interpretable Machine Learning for Classifying Concurrent Mobility Disability in Adults: A Cross-Sectional NHANES Study**
 
 ## Overview
 
 This study develops and internally evaluates interpretable machine-learning models for concurrent classification of self-reported mobility disability in adults using the 2017–2018 National Health and Nutrition Examination Survey (NHANES).
 
-The analytical cohort included 5,853 adults, including 966 participants reporting serious difficulty walking or climbing stairs. After outcome-independent feature-quality screening, 326 predictors were retained across seven domains:
+The analytical cohort included 5,853 adults, including 966 participants reporting serious difficulty walking or climbing stairs. After outcome-independent feature-quality screening, 331 predictors were retained across seven domains:
 
 - Demographics
 - Lifestyle
@@ -18,7 +18,7 @@ The analytical cohort included 5,853 adults, including 966 participants reportin
 - Laboratory
 - Diet
 
-The evaluated models were XGBoost, logistic regression, and random forest. Model interpretation included grouped native XGBoost TreeSHAP, patient-level domain attribution, domain-size-normalized attribution, and leave-one-domain-out retraining.
+The evaluated models were XGBoost, logistic regression, and random forest. Model interpretation included grouped SHAP-based attribution, patient-level domain attribution, domain-size-normalized attribution, and leave-one-domain-out retraining.
 
 ## Data
 
@@ -40,7 +40,7 @@ The mobility-disability outcome was based on NHANES variable **DLQ050**: serious
 - Five-fold stratified cross-validation within the development cohort
 - Platt calibration based on out-of-fold development predictions
 - Operating thresholds selected from development data
-- Native XGBoost TreeSHAP evaluated in all 1,171 internal-validation participants
+- SHAP-based feature attribution evaluated in all 1,171 internal-validation participants using the native XGBoost contribution algorithm
 
 ## Software
 
@@ -81,3 +81,8 @@ Please cite the associated manuscript when using this code. Citation information
 Iqram Hussain, PhD  
 Department of Anesthesiology, Weill Cornell Medicine  
 New York, NY, USA
+
+
+## SAS XPORT zero handling
+
+Known SAS XPORT floating-point representations of valid zero introduced during file import were restored to 0 before subsequent data cleaning and feature derivation. The corrected analysis retained 331 original predictors across seven domains.
