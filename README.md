@@ -4,6 +4,10 @@ Code repository for the manuscript:
 
 **Interpretable Machine Learning for Classifying Concurrent Mobility Disability in Adults: A Cross-Sectional NHANES Study**
 
+**Published in:** *Journal of Disability Research*  
+**Article DOI:** https://doi.org/10.57197/JDR-2026-0984  
+**Supplementary materials:** [Supplementary_Informations_v1.pdf](Supplementary_Informations_v1.pdf)
+
 ## Overview
 
 This study develops and internally evaluates interpretable machine-learning models for concurrent classification of self-reported mobility disability in adults using the 2017–2018 National Health and Nutrition Examination Survey (NHANES).
@@ -74,7 +78,13 @@ NHANES data must be downloaded separately from the official NHANES website. Loca
 
 ## Citation
 
-Please cite the associated manuscript when using this code. Citation information will be updated after publication.
+If you use this code or supporting materials, please cite the published article:
+
+> *Interpretable Machine Learning for Classifying Concurrent Mobility Disability in Adults: A Cross-Sectional NHANES Study.* **Journal of Disability Research**. https://doi.org/10.57197/JDR-2026-0984
+
+[View published article](https://doi.org/10.57197/JDR-2026-0984) · [View supplementary materials](Supplementary_Informations_v1.pdf)
+
+The article DOI is provided as the permanent publication identifier. Refer to the journal article for its full author and bibliographic citation.
 
 ## Contact
 
